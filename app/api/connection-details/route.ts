@@ -50,6 +50,7 @@ export async function GET() {
     const headers = new Headers({
       "Cache-Control": "no-store",
     });
+    
     return NextResponse.json(data, { headers });
   } catch (error) {
     if (error instanceof Error) {
